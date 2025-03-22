@@ -1,7 +1,6 @@
 import React from 'react'; //
-import ReactDOM from 'react-dom'; //The new way to import createRoot:
-// import { createRoot } from "react-dom/client"; //DOM is mainly for web, ReactNative for mobile etc
-// import './index.css'; 
+import { createRoot } from "react-dom/client"; //DOM is mainly for web, ReactNative for mobile etc
+import './index.css'; 
 // import Card from './components/Card'; //this assume App is js if not specified
 // import CardList from  './components/CardList';
 import App from './App';
@@ -28,8 +27,7 @@ import { robots } from './robots'; //since it's not export default, we need to d
 
 
 //=======Dynamic code==============
-ReactDOM.render(
-            <App robots={robots}/>
-    , document.getElementById('root'));
-// registerServiceWorker();
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+registerServiceWorker();
 
