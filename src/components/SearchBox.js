@@ -25,7 +25,8 @@ const SearchBox = ({Searchfield, searchChange}) => {
                 className="pa3 ba b--green bg-lightest-blue"
                 type='search' 
                 placeholder='search robots'
-                onChange={searchChange} //onChange is a HTML event
+                onChange={searchChange} //onChange is a built-in HTML/React event that automatically receives an event parameter containing information about what changed.
+                //Capture what use input and called the onSearchChange() on App.js
             />
         </div>
     );
