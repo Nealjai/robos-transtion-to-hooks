@@ -1,11 +1,10 @@
 import React from 'react';
-
-const Scroll = (props) => {
-  return (
-    <div style={{ overflow: 'scroll', border: '5px solid black', height: '800px'}}>
-      {props.children}
-    </div>
-  );
+// This makes the component scrollable
+const Scroll = (props) =>{
+    return (
+        <div style={{overflow: 'scroll', border: '3px solid black', height: '800px'}}>
+            {props.children}
+        </div>
+    )
 };
-
-export default Scroll;
+export default Scroll

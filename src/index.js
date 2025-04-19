@@ -3,10 +3,10 @@ import { createRoot } from "react-dom/client"; //DOM is mainly for web, ReactNat
 import './index.css'; 
 // import Card from './components/Card'; //this assume App is js if not specified
 // import CardList from  './components/CardList';
-import App from './App';
+import App from './containers/App';
 import 'tachyons'; //for the shortcut in css
 import registerServiceWorker from './registerServiceWorker';
-import { robots } from './robots'; //since it's not export default, we need to destructure
+//import { robots } from './robots'; since it's not export default, we need to destructure
 
 // const root = createRoot(document.getElementById('root'));
 // root.render(<Hello />);
